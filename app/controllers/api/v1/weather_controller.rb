@@ -4,6 +4,6 @@ class Api::V1::WeatherController < ApplicationController
 
        forecast = WeatherFacade.create_forecast(location.latitude, location.longitude)
 
-       render json: ForecastSerializer.new(forecast)
+       render json: ForecastSerializer.forecast_poro(forecast)
    end
 end
