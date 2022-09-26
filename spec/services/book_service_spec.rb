@@ -1,12 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe LibraryService do
+RSpec.describe BookService do
   it 'returns book data', :vcr do
       location = "Nashville, TN"
       quantity = 5
 
-      search = LibraryService.new
-      results = search.book_search(location, quantity)
+      results = BookService.book_search(location, quantity)
 
       expect(results).to be_a(Hash)
       expect(results).to have_key(:numFound)
@@ -32,4 +31,4 @@ RSpec.describe LibraryService do
       expect(pub).to be_a(String)
     end
   end
-end  
+end
