@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=<map_quest_key>&location=3002%20Halenwool%20Cir%20Franklin,%20TN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 26 Sep 2022 02:30:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '7804'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Mon, 26 Sep 2022 02:30:44 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=C121309D7AC27790403714D457D96DFA; Path=/; HttpOnly; Secure
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+      Strict-Transport-Security:
+      - max-age=0
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"3002
+        Halenwool Cir Franklin, TN"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Franklin","adminArea5Type":"City","adminArea4":"Williamson
+        County","adminArea4Type":"County","adminArea3":"TN","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282022240","unknownInput":"","type":"s","latLng":{"lat":35.923652,"lng":-86.867827},"displayLatLng":{"lat":35.923652,"lng":-86.867827},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=35.923652,-86.867827|marker-sm-50318A-1&scalebar=true&zoom=12&rand=901255926"},{"street":"3002
+        Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Lake","adminArea5Type":"City","adminArea4":"Clare","adminArea4Type":"County","adminArea3":"MI","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"48632-8977","geocodeQualityCode":"L1BCX","geocodeQuality":"ADDRESS","dragPoint":false,"sideOfStreet":"R","linkId":"rnr4591506|i25917014","unknownInput":"","type":"s","latLng":{"lat":43.940153,"lng":-84.987971},"displayLatLng":{"lat":43.940031,"lng":-84.988129},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=43.940153,-84.987971|marker-sm-50318A-2&scalebar=true&zoom=15&rand=-2035165452"},{"street":"[268
+        - 298] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Pittsburg","adminArea5Type":"City","adminArea4":"Contra
+        Costa","adminArea4Type":"County","adminArea3":"CA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"94565-7364","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"R","linkId":"rnr4591507|i70323718","unknownInput":"","type":"s","latLng":{"lat":38.00967,"lng":-121.947954},"displayLatLng":{"lat":38.00977,"lng":-121.948127},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=38.00967,-121.947954|marker-sm-50318A-3&scalebar=true&zoom=15&rand=1618318855"},{"street":"[122
+        - 198] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Daphne","adminArea5Type":"City","adminArea4":"Baldwin","adminArea4Type":"County","adminArea3":"AL","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"36526-7832","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"R","linkId":"rnr4591503|i14608896","unknownInput":"","type":"s","latLng":{"lat":30.644517,"lng":-87.878026},"displayLatLng":{"lat":30.644318,"lng":-87.878008},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=30.644517,-87.878026|marker-sm-50318A-4&scalebar=true&zoom=15&rand=-788652434"},{"street":"[154
+        - 198] Haleswood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Goose
+        Creek","adminArea5Type":"City","adminArea4":"Berkeley","adminArea4Type":"County","adminArea3":"SC","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"29445-7081","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"L","linkId":"rnr4503607|i52261756","unknownInput":"","type":"s","latLng":{"lat":33.023678,"lng":-80.073026},"displayLatLng":{"lat":33.023778,"lng":-80.072853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=33.023678,-80.073026|marker-sm-50318A-5&scalebar=true&zoom=15&rand=684053581"},{"street":"[5
+        - 99] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Canyon","adminArea5Type":"City","adminArea4":"Randall","adminArea4Type":"County","adminArea3":"TX","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"79015-2024","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"R","linkId":"rnr4591502|i54904805","unknownInput":"","type":"s","latLng":{"lat":34.986461,"lng":-101.930696},"displayLatLng":{"lat":34.986519,"lng":-101.930888},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=34.986461,-101.930696|marker-sm-50318A-6&scalebar=true&zoom=15&rand=-3209450"},{"street":"[58
+        - 98] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Sacramento","adminArea5Type":"City","adminArea4":"Sacramento","adminArea4Type":"County","adminArea3":"CA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"95831-2121","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"L","linkId":"rnr4591504|i70657266","unknownInput":"","type":"s","latLng":{"lat":38.501854,"lng":-121.530663},"displayLatLng":{"lat":38.502038,"lng":-121.530585},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=38.501854,-121.530663|marker-sm-50318A-7&scalebar=true&zoom=15&rand=1371718908"},{"street":"[6400
+        - 6512] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Huntington
+        Beach","adminArea5Type":"City","adminArea4":"Orange","adminArea4Type":"County","adminArea3":"CA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"92648-6622","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"L","linkId":"rnr4591508|i71708154","unknownInput":"","type":"s","latLng":{"lat":33.678936,"lng":-118.014504},"displayLatLng":{"lat":33.678821,"lng":-118.01434},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=33.678936,-118.014504|marker-sm-50318A-8&scalebar=true&zoom=15&rand=-1135778889"},{"street":"[7700
+        - 7700] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Saint
+        Paul","adminArea5Type":"City","adminArea4":"Washington","adminArea4Type":"County","adminArea3":"MN","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"55125","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"R","linkId":"rnr4591509|i27460462","unknownInput":"","type":"s","latLng":{"lat":44.918081,"lng":-92.950666},"displayLatLng":{"lat":44.917889,"lng":-92.950612},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=44.918081,-92.950666|marker-sm-50318A-9&scalebar=true&zoom=15&rand=-1576467681"},{"street":"[20200
+        - 20298] Havenwood Cir","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Harrah","adminArea5Type":"City","adminArea4":"Oklahoma","adminArea4Type":"County","adminArea3":"OK","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"73045-6472","geocodeQualityCode":"B3BCX","geocodeQuality":"STREET","dragPoint":false,"sideOfStreet":"L","linkId":"rnr4591505|i40327989","unknownInput":"","type":"s","latLng":{"lat":35.441542,"lng":-97.171754},"displayLatLng":{"lat":35.441342,"lng":-97.171755},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<map_quest_key>&type=map&size=225,160&locations=35.441542,-97.171754|marker-sm-50318A-10&scalebar=true&zoom=15&rand=433977568"}]}]}'
+  recorded_at: Mon, 26 Sep 2022 02:30:44 GMT
+recorded_with: VCR 6.1.0
