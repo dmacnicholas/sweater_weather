@@ -45,7 +45,7 @@ RSpec.describe "Session Creation" do
     end
   end
 
-  it 'returns a 401 status code' do
+  it 'returns a 401 status code when email or password are incorrect' do
     user_1 = User.create(email: "drew@test.com", password: "password123", password_confirmation: "password123")
 
 
