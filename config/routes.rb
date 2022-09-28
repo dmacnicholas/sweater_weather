@@ -5,6 +5,7 @@ Rails.application.routes.draw do
         resources :weather, only: [:index]
         get '/book-search', to: 'book_search#index'
         resources :users, only: [:create]
+        resources :sessions, only: [:create]
     end
   end
 end

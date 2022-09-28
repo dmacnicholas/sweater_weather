@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "User Registation" do
+RSpec.describe "User Registration" do
   describe 'expose user registration endpoint, happy path' do
     it 'returns a 201 status code' do
       headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
@@ -26,7 +26,7 @@ RSpec.describe "User Registation" do
   end
 
   describe 'expose user registration endpoint, sad path' do
-    it 'returns a 401 status code for mistyped password' do
+    it 'returns a 422 status code for mistyped password' do
       headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       user_data = { "email": "drew@test.com", "password": "password123", "password_confirmation": "assword123" }
       post '/api/v1/users', headers: headers, params: JSON.generate(user_data)
@@ -36,7 +36,7 @@ RSpec.describe "User Registation" do
       expect(response.body).to eq("{\"message\":\"Passwords do not match\"}")
     end
 
-    it 'returns a 401 status code for an email that already exists' do
+    it 'returns a 422 status code for an email that already exists' do
       user_1 = User.create(email: "drew@test.com", password: "password123", password_confirmation: "password123")
       headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
       user_data = { "email": "drew@test.com", "password": "password123", "password_confirmation": "password123" }
