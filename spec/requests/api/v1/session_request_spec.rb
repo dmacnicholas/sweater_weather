@@ -40,12 +40,12 @@ RSpec.describe "Session Creation" do
 
 
       expect(response.status).to eq(401)
-      expect(response.body).to eq("{\"message\":\"User does not exist. Please register!\"}")
+      expect(response.body).to eq("{\"message\":\"User email or password is invalid.\"}")
 
     end
   end
 
-  it 'returns a 401 status code when email or password are incorrect' do
+  it 'returns a 401 status code when email is incorrect' do
     user_1 = User.create(email: "drew@test.com", password: "password123", password_confirmation: "password123")
 
 
