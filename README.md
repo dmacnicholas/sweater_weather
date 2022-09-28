@@ -12,9 +12,8 @@ In this service-oriented architecture, the (theoretical) front-end team will com
   - Run `bundle exec figaro install`
   - Open your `config/application.yml` file in your code editor (You may have to open it manually). Then, add to the bottom of the `config/application.yml` file **your** api keys:
 ```
-open_weather_api_key: <your_open_weather_api_key>
-mapquest_api_key: <your_mapquest_api_key>
-unsplash_api_key: Client-ID <your_unsplash_api_key>
+weather_key: <your_open_weather_api_key>
+mapquest__key: <your_mapquest_api_key>
 ```
 
 ## Database Creation
