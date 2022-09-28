@@ -31,5 +31,5 @@ unsplash_api_key: Client-ID <your_unsplash_api_key>
 ### <ins>Contributor</ins>
 
 👤  **Drew MacNicholas**
-- Github: [Github](https://github.com/dmacnicholas)
-- LinkedIn: [LinkedIn](https:/https://www.linkedin.com/in/drew-macnicholas-20b75660/)
+- [Github](https://github.com/dmacnicholas)
+- [LinkedIn](https:/https://www.linkedin.com/in/drew-macnicholas-20b75660/)
