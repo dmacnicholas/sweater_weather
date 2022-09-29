@@ -27,7 +27,6 @@ class RoadTripSerializer
           end_city: "#{roadtrip.end_city}",
           travel_time: "#{roadtrip.route_error}",
           weather_at_eta: {
-
           }
         }
       }
