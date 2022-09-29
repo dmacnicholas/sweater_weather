@@ -4,7 +4,8 @@ class RoadTripFacade
     destination_coor = LocationFacade.create_location(destination)
 
     destination_weather = WeatherService.weather_search(destination_coor.latitude, destination_coor.longitude)
-    travel_hours = travel_time[:route][:formattedTime].split(/:/)[0].to_i
+
+    travel_hours = travel_time[:route][:formattedTime].to_i
 
     arrival_temp = destination_weather[:hourly][travel_hours]
 
@@ -16,5 +17,6 @@ class RoadTripFacade
     }
 
     RoadTrip.new(roadtrip)
+
   end
 end

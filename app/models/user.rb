@@ -3,6 +3,7 @@ class User < ApplicationRecord
     validates_presence_of :password
     before_save :keys
     has_secure_password
+    # has_secure_token :api_keys
 
   def keys
    self.api_key = SecureRandom.hex
